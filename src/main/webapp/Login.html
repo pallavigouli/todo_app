@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+		background-color: rgb(255, 255, 255);
+	}
+	label{
+		font-size: 26px;
+		font-weight: bold;
+	}
+	button{
+		margin:10px;
+		font-size: 18px;
+		font-weight: bold;
+		background-color: limegreen;
+		border-radius: 10px;
+		padding: 10px 20px;
+		margin-left: 50px;
+	}
+	div{
+		height: 300px;
+		width: 1320px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		opacity: 0;
+        animation: fadeInAnimation 1s ease-in-out forwards;
+	}
+
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+	h2{
+		text-align: center;
+		font-size: 47px;
+		font-weight: bold;
+		text-shadow: 2px 2px red;
+		}
+	#btn2{
+		background-color: rgb(255, 128, 128);
+		padding: 10px 50px;
+	}
+	input{
+		border-radius: 15px;
+		padding: 13px 20px;
+	}
+	fieldset{
+		border-radius: 15px;
+		padding: 10px;
+        background-color:rgb(192, 192, 192);
+	}
+	#cancelbtn{
+		background-color: red;
+	}
+	#login:hover{
+		background-color: seagreen;
+		color: white;
+	}
+	#cancelbtn:hover{
+		background-color:orangered;
+		color: white;
+	}
+        input:focus {
+            border-color: #007bff;
+        }
+      h1{
+		  color:lawngreen;
+		  font-weight: bold;
+		  text-align: right;
+	  }
+</style>
+</head>
+<body>
+	<h2>Todo Login </h2>
+	<div>
+	<form action="login" method="post">
+	<fieldset>
+	<label>Email/Phone:</label>
+	<input type="text" name="email"/><br><br>
+	<label>Password:</label>
+	<input type="text" name="password"/><br><br>
+	<button id="login">Login</button>
+	<button id="cancelbtn" type="reset"">Cancel</button><br><br>
+	<a href="http://localhost:8080/todo_app/Signup.html"><button id="btn2" type="button">Click here to Register</button></a>
+	</form>
+	</fieldset>
+	</div>
+	
+</body>
+</html>

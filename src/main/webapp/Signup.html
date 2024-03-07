@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+	body{
+		background-color: rgb(192, 192, 192);
+	}
+	label{
+		font-size: 22px;
+		font-weight: bold;
+	}
+	button{
+		margin:10px;
+		font-size: 18px;
+		font-weight: bold;
+		background-color: limegreen;
+		border-radius: 10px;
+		padding: 8px 10px;
+		margin-left: 50px;
+	}
+	div{
+		height:420px;
+		width: 1320px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		opacity: 0;
+        animation: fadeInAnimation 1s ease-in-out forwards;
+	}
+	 @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+	h2{
+		margin-top: -10px;
+		text-align: center;
+		font-size: 48px;
+		font-weight: bold;
+		text-shadow: 3px 3px silver;
+		}
+	#btn2{
+		background-color:black;
+		color: white;
+		margin-left: 20px;
+	}
+	input{
+		border-radius: 15px;
+		padding: 11px 20px;
+	}
+	fieldset{
+		border-radius: 15px;
+		padding: 10px;
+        background-color:lightpink;
+	}
+	#cancelbtn{
+		background-color: red;
+	}
+	button:hover{
+		background-color: lightgoldenrodyellow;
+	}
+</style>
+
+<body>
+	<h2> Todo SignUp</h2><br>
+	<div>
+	<form action="signup" method="post">
+	<fieldset>
+	<label>Name:</label>
+	<input type="text" name="name"/><br><br>
+	<label>Email:</label>
+	<input type="text" name="email"/><br><br>
+	<label>Password:</label>
+	<input type="text" name="password"/><br><br>
+	<label>DOB:</label>
+	<input type="date" name="dob"/><br><br>
+	<label>Mobile:</label>
+	<input type="text" name="phone"/><br><br>
+	<label>Gender:</label>
+	Male:<input type="radio" name="gender" value="male"/>
+	Female:<input type="radio" name="gender" value="female"/><br><br>	
+	<button>Signup</button>
+	<button id="cancelbtn" type="reset">Cancel</button><br><br>
+	<a href="http://localhost:8080/todo_app/Login.html"><button type="button" id="btn2">Already Registered Login Here</button></a>
+	</fieldset>
+	</form>
+	</div>
+</body>
+</html>
